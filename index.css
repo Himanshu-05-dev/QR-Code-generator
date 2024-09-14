@@ -1,0 +1,70 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.container {
+    background: linear-gradient(145deg, #04724D, #B8DBD9);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    background: linear-gradient(145deg, #2C383E, #586F7C);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main p {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0 20px 30px;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #B8DBD9;
+}
+#qrText{
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+#qrBtn{
+    font-size: 1.3rem;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 4px solid grey;
+    background: #C0CFE4;
+    cursor: pointer;
+}
+#qrCode{
+    max-height: 300px;
+    max-width: 300px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+#qrCode.show{
+    max-height: 300px;
+    margin: 10px auto;
+}
+
+#qrImage{
+    border-radius: 45px;
+}

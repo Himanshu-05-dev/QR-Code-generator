@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr-Code Generator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <p>QR Code Generator</p>
+            <input type="text" id="qrText" placeholder="Enter Name or URL">
+            <div id="qrCode">
+                <img src="" id="qrImage">
+            </div>
+            <button id="qrBtn" onclick="genQr()">Generate QR-Code</button>
+        </div>
+    </div>
+    <script>
+        let input = document.getElementById("qrText");
+        let output = document.getElementById("qrCode");
+        let image = document.getElementById('qrImage');
+        function genQr() {
+            if (input.value === "") {
+                alert("Please Write something First!!!")
+            } else{
+                image.src = "https://quickchart.io/qr?text=" + input.value;
+            }
+            // input.value="";
+            output.classList.add("show");
+        }
+        
+    </script>
+</body>
+
+</html>
